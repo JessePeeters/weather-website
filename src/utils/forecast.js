@@ -14,7 +14,7 @@ const forecast = (latitude, longitude, callback) => {
             const summary = body.daily.data[0].summary
             const laagsteTemp = body.daily.data[0].temperatureLow
             const hoogsteTemp = body.daily.data[0].temperatureHigh
-            callback(undefined, summary + " Het is momenteel " + graden + " graden met als hoogst gemeten tempratuur "+ hoogsteTemp +" graden en met als laagst gemeten tempratuur " + laagsteTemp + " graden. Er is " + kansOpRegen + "% kans op regen.")
+            callback(undefined, summary + " Het is momenteel " + graden + " graden met als hoogst gemeten temperatuur "+ hoogsteTemp +" graden en met als laagst gemeten temperatuur " + laagsteTemp + " graden. Er is " + kansOpRegen + "% kans op regen.")
         }
     })
 }
